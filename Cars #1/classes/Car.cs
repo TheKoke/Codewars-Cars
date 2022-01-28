@@ -32,13 +32,17 @@ namespace Cars
         public void EngineStart()
         {
             if ((!EngineIsRunning) && fuelTank.FillLevel > 0)
+            {
                 engine.Start();
+            }
         }
 
         public void EngineStop()
         {
             if (engine.IsRunning)
+            {
                 engine.Stop();
+            }
         }
 
         public void Refuel(double liters)
@@ -49,7 +53,9 @@ namespace Cars
         public void RunningIdle()
         {
             if (EngineIsRunning)
+            {
                 engine.Consume(0.0003);
+            }
         }
     }
 }
