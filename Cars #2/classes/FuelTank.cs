@@ -16,10 +16,14 @@ namespace Cars
             fillLevel = fuelLevel;
 
             if (fillLevel > 60)
+            {
                 fillLevel = 60;
+            }
 
             if (fillLevel < 0)
+            {
                 fillLevel = 0;
+            }
         }
 
         private double fillLevel;
@@ -35,7 +39,7 @@ namespace Cars
 
         public bool IsComplete
         {
-            get =>fillLevel >= 60;
+            get => fillLevel >= 60;
         }
 
         public void Consume(double liters)
