@@ -41,7 +41,9 @@ namespace Cars
             fillLevel -= liters;
 
             if (fillLevel < 0)
+            {
                 fillLevel = 0;
+            }
         }
 
         public void Refuel(double liters)
@@ -51,7 +53,9 @@ namespace Cars
                 fillLevel += liters;
 
                 if (fillLevel > 60)
+                {
                     fillLevel = 60;
+                }
             }
         }
     }
