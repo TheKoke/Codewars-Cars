@@ -22,7 +22,9 @@ namespace Cars
             fuel.Consume(liters);
 
             if (fuel.FillLevel <= 0)
+            {
                 Stop();
+            }
         }
 
         public void Start()
