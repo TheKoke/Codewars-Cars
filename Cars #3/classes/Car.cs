@@ -15,6 +15,10 @@ namespace Cars
         private DrivingProcessor drivingProcessor;
 
         public DrivingDisplay drivingDisplay;
+        
+        private OnBoardComputer boardComputer;
+        
+        public OnBoardComputerDisplay boardComputerDisplay;
 
         public Car()
         {
