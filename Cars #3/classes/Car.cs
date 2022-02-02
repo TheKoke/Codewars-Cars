@@ -25,6 +25,16 @@ namespace Cars
             drivingProcessor = new DrivingProcessor();
             drivingDisplay = new DrivingDisplay(drivingProcessor);
         }
+        
+        public Car(double fuelLevel)
+        {
+            fuelTank = new FuelTank(fuelLevel);
+            engine = new Engine(fuelTank);
+            fuelTankDisplay = new FuelTankDisplay(fuelTank);
+            
+            drivingProcessor = new DrivingProcessor();
+            drivingDisplay = new DrivingDisplay(drivingProcessor);
+        }
 
         public Car(double fuelLevel, int maxAccelerate)
         {
