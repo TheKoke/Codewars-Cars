@@ -2,7 +2,7 @@
 
 namespace Cars
 {
-    class OnBoardComputer
+    class OnBoardComputer : IOnBoardComputer
     {
     }
 }
