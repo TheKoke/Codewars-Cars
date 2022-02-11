@@ -4,21 +4,52 @@ namespace Cars
 {
     class OnBoardComputerDisplay : IOnBoardComputer
     {
-        public int TripRealTime => throw new NotImplementedException();
+        private OnBoardComputer computer;
+        
+        public OnBoardComputerDisplay(OnBoardComputer comp)
+        {
+            this.computer = comp;
+        }
+    
+        public int TripRealTime
+        {
+            get => computer.TripRealTime;
+        }
 
-        public int TripDrivingTime => throw new NotImplementedException();
+        public int TripDrivingTime
+        {
+            get => computer.TripDrivingTime;
+        }
 
-        public int TripDrivenDistance => throw new NotImplementedException();
+        public int TripDrivenDistance
+        {
+            get => computer.TripDrivenDistance;
+        }
 
-        public int TotalRealTime => throw new NotImplementedException();
+        public int TotalRealTime
+        {
+            get => computer.TotalRealTime;
+        }
 
-        public int TotalDrivingTime => throw new NotImplementedException();
+        public int TotalDrivingTime
+        {
+            get => computer.TotalDrivingTime;
+        }
 
-        public int TotalDrivenDistance => throw new NotImplementedException();
+        public int TotalDrivenDistance
+        {
+            get => computer.TotalDrivenDistance;
+        }
 
-        public double TripAverageSpeed => throw new NotImplementedException();
+        public double TripAverageSpeed
+        {
+            get => computer.TripAverageSpeed;
+        }
 
-        public double TotalAverageSpeed => throw new NotImplementedException();
+        public double TotalAverageSpeed
+        {
+            get => computer.TotalAverageSpeed;
+        }
 
         public int ActualSpeed => throw new NotImplementedException();
 
