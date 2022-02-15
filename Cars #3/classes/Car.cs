@@ -28,6 +28,9 @@ namespace Cars
 
             drivingProcessor = new DrivingProcessor();
             drivingDisplay = new DrivingDisplay(drivingProcessor);
+            
+            boardComputer = new OnBoardComputer();
+            boardComputerDisplay = new OnBoardComputerDisplay(boardComputer);
         }
         
         public Car(double fuelLevel)
@@ -38,6 +41,9 @@ namespace Cars
             
             drivingProcessor = new DrivingProcessor();
             drivingDisplay = new DrivingDisplay(drivingProcessor);
+            
+            boardComputer = new OnBoardComputer();
+            boardComputerDisplay = new OnBoardComputerDisplay(boardComputer);
         }
 
         public Car(double fuelLevel, int maxAccelerate)
@@ -48,6 +54,9 @@ namespace Cars
 
             drivingProcessor = new DrivingProcessor(maxAccelerate);
             drivingDisplay = new DrivingDisplay(drivingProcessor);
+            
+            boardComputer = new OnBoardComputer();
+            boardComputerDisplay = new OnBoardComputerDisplay(boardComputer);
         }
 
         public bool EngineIsRunning
