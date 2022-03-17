@@ -1,11 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace Cars
 {
     public class DrivingProcessor : IDrivingProcessor
     {
+        private int maxAccelerate;
+    
         public DrivingProcessor()
         {
             maxAccelerate = 10;
@@ -18,8 +18,6 @@ namespace Cars
             if (maxAccelerate > 20) maxAccelerate = 20;
             if (maxAccelerate < 5) maxAccelerate = 5;
         }
-
-        private int maxAccelerate;
 
         private int actualSpeed;
         public int ActualSpeed
