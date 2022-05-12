@@ -51,21 +51,45 @@ namespace Cars
             get => computer.TotalAverageSpeed;
         }
 
-        public int ActualSpeed => throw new NotImplementedException();
+        public int ActualSpeed
+        {
+            get => computer.ActualSpeed;
+        }
 
-        public double ActualConsumptionByTime => throw new NotImplementedException();
+        public double ActualConsumptionByTime
+        {
+            get => computer.ActualConsumptionByTime;
+        }
 
-        public double ActualConsumptionByDistance => throw new NotImplementedException();
+        public double ActualConsumptionByDistance
+        {
+            get => computer.ActualConsumptionByDistance;
+        }
 
-        public double TripAverageConsumptionByTime => throw new NotImplementedException();
+        public double TripAverageConsumptionByTime
+        {
+            get => computer.TripAverageConsumptionByTime;
+        }
 
-        public double TotalAverageConsumptionByTime => throw new NotImplementedException();
+        public double TotalAverageConsumptionByTime
+        {
+            get => computer.TotalAverageConsumptionByTime;
+        }
 
-        public double TripAverageConsumptionByDistance => throw new NotImplementedException();
+        public double TripAverageConsumptionByDistance
+        {
+            get => computer.TripAverageConsumptionByDistance;
+        }
 
-        public double TotalAverageConsumptionByDistance => throw new NotImplementedException();
+        public double TotalAverageConsumptionByDistance
+        {
+            get => computer.TotalAverageConsumptionByDistance;
+        }
 
-        public int EstimatedRange => throw new NotImplementedException();
+        public int EstimatedRange
+        {
+            get => computer.EstimatedRange;
+        }
 
         public void ElapseSecond()
         {
